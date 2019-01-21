@@ -35,21 +35,23 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-            <preference name="Location Always and When In Use Usage Description" default=" " />
-            <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
-                <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
-            </config-file>
         
-            <preference name="Location Always Usage Description" default=" " />
-            <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-                <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
-            </config-file>
+        <preference name="Location Always and When In Use Usage Description" default=" " />
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
+        </config-file>
+        
+        <preference name="Location Always Usage Description" default=" " />
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
+        </config-file>
             
-            <preference name="Location When In Use Usage Description" default=" " />
-            <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-                <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
-            </config-file>
-            <header-file src="src/ios/IdealSchoolPlugin.h"/>
-            <source-file src="src/ios/IdealSchoolPlugin.m"/>
-        </platform>
-    </plugin>
+        <preference name="Location When In Use Usage Description" default=" " />
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
+        </config-file>
+            
+        <header-file src="src/ios/IdealSchoolPlugin.h"/>
+        <source-file src="src/ios/IdealSchoolPlugin.m"/>
+    </platform>
+</plugin>
