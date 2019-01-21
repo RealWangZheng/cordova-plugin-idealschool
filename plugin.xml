@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-idealschool" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>IdealSchool</name>
+    <description>Cordova IdealSchool Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,IdealSchool</keywords>
+    <repo>https://github.com/RealWangZheng/cordova-plugin-idealschool.git</repo>
+    <issue>https://github.com/RealWangZheng/cordova-plugin-idealschool/issues</issue>
+    
+    <!--require cordova version -->
+    <engines>
+        <engine name="cordova" version=">=6.0.0" />
+        <engine name="cordova-android" version=">=6.0.0" />
+        <engine name="cordova-ios" version=">=4.0.0" />
+    </engines>
+    <js-module name="IdealSchool" src="www/IdealSchool.js">
+        <clobbers target="IdealSchool" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="IdealSchool">
+                <param name="android-package" value="com.idealworkshops.idealschool.apps.cordova.IdealSchoolPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <source-file src="src/android/IdealSchoolPlugin.java" target-dir="src/com/idealworkshops/idealschool/apps/cordova" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="IdealSchool">
+                <param name="ios-package" value="IdealSchoolPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+            <preference name="Location Always and When In Use Usage Description" default=" " />
+            <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
+            </config-file>
+        
+            <preference name="Location Always Usage Description" default=" " />
+            <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
+            </config-file>
+            <preference name="Location When In Use Usage Description" default=" " />
+            <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+                <string>请允许“理想校园”在您使用该应用时访问您的位置，您的位置将被用来确认您的考勤信息、打卡、发送位置等，使用后台定位会减少电池的使用寿命。</string>
+            </config-file>
+            <header-file src="src/ios/IdealSchoolPlugin.h"/>
+            <source-file src="src/ios/IdealSchoolPlugin.m"/>
+        </platform>
+    </plugin>

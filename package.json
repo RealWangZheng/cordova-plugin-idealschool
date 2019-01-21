@@ -1,0 +1,43 @@
+{
+  "name": "cordova-plugin-idealschool",
+  "version": "1.0.0",
+  "description": "Cordova IdealSchool Plugin",
+  "cordova": {
+    "id": "cordova-plugin-idealschool",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealWangZheng/cordova-plugin-idealschool.git"
+  },
+  "keywords": [
+    "cordova",
+    "IdealSchool",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=6.0.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.0.0"
+    }
+  ],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/RealWangZheng/cordova-plugin-idealschool/issues"
+  },
+  "homepage": "https://github.com/RealWangZheng/cordova-plugin-idealschool#readme"
+}
