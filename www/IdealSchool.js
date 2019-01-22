@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-idealschool.IdealSchool",     
-	function(require, exports, module) {         
+      
 		var exec = require("cordova/exec");         
 		module.exports = {             
 			setToolbarTitle: function(title){                 
@@ -61,5 +60,4 @@ cordova.define("cordova-plugin-idealschool.IdealSchool", 
 					);             
 			}         
 		} 
-	}
-);
+	

@@ -14,7 +14,7 @@
 #import "NTESUserUtil.h"
 #import "PGMultiView.h"
 #import "IDSAllPersonnelViewController.h"
-@implementation IdealSchoolPlugin
+@implementation IdealSchool
 
 - (void)setToolbarTitle:(CDVInvokedUrlCommand*)command
 {

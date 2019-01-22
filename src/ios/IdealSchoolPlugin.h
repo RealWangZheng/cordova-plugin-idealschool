@@ -8,7 +8,7 @@
 #import <Cordova/CDVPlugin.h>
 #import <AMapLocationKit/AMapLocationKit.h>
 
-@interface IdealSchoolPlugin : CDVPlugin<AMapLocationManagerDelegate>
+@interface IdealSchool : CDVPlugin<AMapLocationManagerDelegate>
 @property (nonatomic, strong) AMapLocationManager *locationManager;
 @property (nonatomic, copy) AMapLocatingCompletionBlock completionBlock;
 
